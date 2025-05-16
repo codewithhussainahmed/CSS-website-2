@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo</title>
+    <link rel="shortcut icon" href="Assets/compas.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: f1;
+            src: url(Assets/f.ttf);
+        }
+        @font-face {
+            font-family: f2;
+            src: url(Assets/f2.ttf);
+        }
+        @font-face {
+            font-family: f3;
+            src: url(Assets/f3.ttf);
+        }
+        *{
+            margin: 0;
+        }
+        #nav{
+            display: flex;
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.719);
+        }
+        #n2{
+            /* border: 1px solid black; */
+            align-self: center;
+            font-size: 40px;
+            font-weight: 400;
+            font-family: f1;
+            position: relative;
+            left: -80px;
+        }
+        #n3{
+            align-self: center;
+        }
+        #n4{
+            align-self: center;
+
+        }
+        #n5{
+            align-self: center;
+
+        }
+        #n6{
+            align-self: center;
+
+        }
+        #n7{
+            align-self: center;
+
+        }
+        #n8{
+            align-self: center;
+
+        }
+        #n9{
+            align-self: center;
+            height: 20px;
+            width: 20px;
+        }
+        #n10{
+            align-self: center;
+            height: 20px;
+            width: 20px;
+
+        }
+        #n11{
+            align-self: center;
+            height: 20px;
+            width: 20px;
+
+        }
+        #n12{
+            align-self: center;
+            height: 20px;
+            width: 20px;
+            /* border: 1px solid red; */
+        }
+        #pic{
+            width: 100%;
+            height: 60%;
+            position: relative;
+        }
+        #p1{
+            height: 100%;
+            width: 100%;
+        }
+        #p2{
+            font-family: f2;
+            font-size: 150px;
+            text-transform: capitalize;
+            font-weight: 400;
+            line-height: 5;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 110px;
+            left: 15%;
+        }
+        #p3{
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: f3;
+            top: 530px;
+            left: 17%;
+            font-size: 25px;
+        }
+        #p4{
+            background-color: rgb(30, 198, 182);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+            height: 80px;
+            padding: 18px 41px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: f1;
+            position: absolute;
+            top: 600px;
+            left: 42%;
+        }
+        #p4:hover{
+            background-color: red;
+        }
+        #where{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content:space-evenly;
+            height: 130px;
+            background-color: rgb(4, 14, 39);
+            margin: 0;
+        }
+        #w1{
+            background-color: transparent;
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: f1;
+            align-self: center;
+        }
+        #w2{
+            background-color: transparent;
+            height: 35px;
+            align-self: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        #w3{
+            background-color: transparent;
+            height: 35px;
+            align-self: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+
+        }
+        #w4{
+            background-color: transparent;
+            height: 35px;
+            align-self: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+
+        }
+        #w5 {
+            background-color: rgb(255, 74, 82);
+            padding: 13px 39px; 
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-family: f1;
+            text-align: center;
+            height: 40px;
+            align-self: center;
+            color: white;
+            font-family: f1;
+        }
+        #w5:hover{
+            background-color: rgb(30, 198, 182);
+
+        }    
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img src="Assets/compas.png" alt="" id="1">
+        <p id="n2">Travelo</p>
+        <p id="n3">Home </p>
+        <p id="n4">About</p>
+        <p id="n5">Destinations</p>
+        <p id="n6">Pages</p>
+        <p id="n7">Blog</p>
+        <p id="n8">Contact</p>
+        <img src="Assets/in.png" alt="" id="n9">
+        <img src="Assets/li.png" alt="" id="n10">
+        <img src="Assets/fb.png" alt="" id="n11">
+        <img src="Assets/se.png" alt="" id="n12">
+    </div>
+    <div id="pic">
+        <img src="Assets/mountains.jpg" alt="" id="p1">
+        <p id="p2">SwitzerLand</p>
+        <p id="p3"> "Switzerland – Alpine wonders, chocolate dreams, and watchmaking dreams."</p>
+        <button id="p4">Explore Now</button>
+    </div>
+    <div id="where">
+        <p id="w1">Where do you want to go?</p>
+        <input type="text" placeholder="Where to go?" id="w2">
+        <input type="text" placeholder="Date" id="w3">
+        <input type="text" placeholder="Travel Type" id="w4">
+        <button id="w5">Search</button>
+    </div>
+</body>
+</html>
